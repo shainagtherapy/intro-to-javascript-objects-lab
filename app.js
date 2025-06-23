@@ -129,7 +129,11 @@ Exercise 9
 Solve Exercise 9 here:
 */
 
-
+pokemon.forEach( pokemon => {
+  if (pokemon.starter === true) {
+    console.log(pokemon.name);
+  }
+ });
 
 /*
 Exercise 10
@@ -142,7 +146,11 @@ After writing this method, call it and pass in a Pokemon object of your choice f
 
 Solve Exercise 10 here:
 */
+game.catchPokemon = function(pokemonObj) {
+  game.party.push(pokeObj);
+}
 
+console.log(game.party[0])
 
 
 /*
