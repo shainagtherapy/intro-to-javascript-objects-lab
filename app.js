@@ -1,4 +1,3 @@
-//const pokemon = require('./data.js');
 
 const game = {
   party: [],
@@ -19,14 +18,13 @@ const game = {
   ],
 }
   
-console.dir(pokemon[99], { maxArrayLength: null })
-console.log(game)
+// console.dir(pokemon[99], { maxArrayLength: null })
+// console.log(game)
 
 /*
 Exercise 3
 1. Add a new property to the `game` object. Let's call it "difficulty".
 2. Choose a value for "difficulty" that you think fits the game. Ex: "Easy", "Med" or "Hard". How would you assign it?
-
 
 Solve Exercise 3 here:
 */
@@ -44,7 +42,7 @@ Exercise 4
 Solve Exercise 4 here:
 */
 
-game.party.push(pokemon[6])
+game.party.push(pokemon[6]);
 console.log(game.party)
 
 /*
@@ -57,10 +55,10 @@ Solve Exercise 5 here:
 */
 
 /*first attempt(which I learned in breakout groups isn't right:
-game.party = [pokemon[6], pokemon[38], pokemon[64], pokemon[149]] */
+game.party = [pokemon[7], pokemon[38], pokemon[64], pokemon[149]] */
 
 // I chose 3 nostalgic pokemon I remember from being a kid
-game.party.push(pokemon[38], pokemon[64], pokemon[88])
+game.party.push(pokemon[38], pokemon[64], pokemon[88]);
 console.log(game.party);
 
 /*
@@ -107,6 +105,8 @@ Solve Exercise 7 here:
 */
 
 
+game.party.splice(0, 1, pokemon[7]);
+console.log(game.party)
 
 /*
 Exercise 8
@@ -116,7 +116,9 @@ Exercise 8
 Solve Exercise 8 here:
 */
 
-
+game.party.forEach (pokemon => {
+  console.log(pokemon.name)
+});
 
 /*
 Exercise 9
@@ -194,90 +196,90 @@ Solve Exercise 13 here:
 
 
 
-// extra practice:
-const coffeeOrder = {
-  drink: "cappuccino",
-  size: "12oz",
-  milk: "whole",
-  shots: 2
-}
+// // extra practice:
+// const coffeeOrder = {
+//   drink: "cappuccino",
+//   size: "12oz",
+//   milk: "whole",
+//   shots: 2
+// }
 
-console.log(coffeeOrder.drink)
-console.log(coffeeOrder["milk"])
-console.log(coffeeOrder["drink"])
-console.log(coffeeOrder.shots)
+// console.log(coffeeOrder.drink)
+// console.log(coffeeOrder["milk"])
+// console.log(coffeeOrder["drink"])
+// console.log(coffeeOrder.shots)
 
-const pet = {
-  type: "dog",
-  name: "Buddy",
-  age: 4,
-  isVaccinated: true
-}
+// const pet = {
+//   type: "dog",
+//   name: "Buddy",
+//   age: 4,
+//   isVaccinated: true
+// }
 
-console.log(pet.name)
-console.log(pet.isVaccinated)
+// console.log(pet.name)
+// console.log(pet.isVaccinated)
 
-const car = {
-  brand: "Toyota",
-  color: "blue",
-  year: 2020,
-}
+// const car = {
+//   brand: "Toyota",
+//   color: "blue",
+//   year: 2020,
+// }
 
-console.log(car["color"])
+// console.log(car["color"])
 
-const movie = {
-  title: "The Matrix",
-  rating: "R",
-}
+// const movie = {
+//   title: "The Matrix",
+//   rating: "R",
+// }
 
-console.log(movie)
+// console.log(movie)
 
-movie.genre = "sci-fi"
-console.log(movie)
+// movie.genre = "sci-fi"
+// console.log(movie)
 
-movie.rating = "PG-13"
-console.log(movie)
+// movie.rating = "PG-13"
+// console.log(movie)
 
-const person = {
-  name: "Taylor",
-  contact: {
-    email: "taylor@email.com",
-    phone: "555-1234",
-  }
-}
-console.log(person.contact.email)
-console.log(person["contact"]["email"])
+// const person = {
+//   name: "Taylor",
+//   contact: {
+//     email: "taylor@email.com",
+//     phone: "555-1234",
+//   }
+// }
+// console.log(person.contact.email)
+// console.log(person["contact"]["email"])
 
-const dog = {
-  name: "Rex",
-  bark: function() {
-    console.log("Woof!")
-  }
-}
-dog.bark();
+// const dog = {
+//   name: "Rex",
+//   bark: function() {
+//     console.log("Woof!")
+//   }
+// }
+// dog.bark();
 
-const doggy = {
-  name: "Rex",
-  bark() {
-    console.log("Woof!")
-  }
-}
-doggy.bark()
+// const doggy = {
+//   name: "Rex",
+//   bark() {
+//     console.log("Woof!")
+//   }
+// }
+// doggy.bark()
 
-const counter = {
-  count: 5, //change this number for different answers (to get this.count += 1)
-  increment() {
-    counter.count += 1; //can use this.count since working within this same object
-  }
-}
-counter.increment();
+// const counter = {
+//   count: 5, //change this number for different answers (to get this.count += 1)
+//   increment() {
+//     counter.count += 1; //can use this.count since working within this same object
+//   }
+// }
+// counter.increment();
 
-console.log(counter.count)
+// console.log(counter.count)
 
-const student = {
-  name: "Shaina",
-  sayHello () {
-    return "Hi, my name is " + student.name
-  }
-}
-console.log(student.sayHello())
+// const student = {
+//   name: "Shaina",
+//   sayHello () {
+//     return "Hi, my name is " + student.name
+//   }
+// }
+// console.log(student.sayHello())
